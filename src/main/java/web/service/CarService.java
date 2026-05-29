@@ -21,7 +21,7 @@ public class CarService {
 
     // Возвращаем список машин в зависимости от count
     public List<Car> getCarsByCount(Integer count) {
-        if (count == null || count >= 5 || count < 0) {
+        if (count == null || count < 0) {
             return carList;
         }
         return carList.stream()
